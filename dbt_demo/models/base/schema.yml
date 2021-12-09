@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: covid_france
+    description: "raw data of covid in France"
+    columns:
+      - name: date
+      - name: deces
+      - name: gueris
+      - name: decesEhpad
+      - name: reanimation
+      - name: casConfirmes
+      - name: hospitalises
+      - name: testsPositifs
+      - name: testsRealises
+      - name: casConfirmesEhpad
+      - name: casPossiblesEhpad
+      - name: nouvellesReanimations
+      - name: stockNombreTotalDoses
+      - name: stockNombreDosesPfizer
+      - name: stockNombreDosesModerna
+      - name: cumulPremieresInjections
+      - name: nouvellesHospitalisations
+      - name: stockEhpadNombreDosesPfizer
+      - name: nouvellesPremieresInjections
+      - name: prisesRendezVousSemaineRang1
+      - name: prisesRendezVousSemaineRang2
+      - name: totalPrisesRendezVousSemaine
+      - name: livraisonsCumulNombreTotalDoses
+      - name: livraisonsCumulNombreDosesPfizer
+      - name: livraisonsCumulNombreDosesModerna
