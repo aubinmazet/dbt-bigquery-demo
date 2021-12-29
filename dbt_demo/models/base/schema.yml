@@ -1,10 +1,19 @@
 version: 2
 
-models:
-  - name: monthly_aggregation
-    columns:
-      - name: month
-        tests:
-        - not_null
-      - name: sum_deces
-      - name: sum_gueris
+sources:
+  - name: ecommerce
+    tables:
+      - name: customers
+        description: Table containing customers data.
+        columns:
+          - name: customer_id
+            descrption: Primary key of the table
+            tests: 
+              - unique
+              - not_null
+
+      - name: geolocation
+      - name: orders
+      - name: order_items
+      - name: sellers
+      - name: order_payments
