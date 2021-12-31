@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: ecommerce
+    tables:
+      - name: customers
+        description: Table containing customers data.
+        columns:
+          - name: customer_id
+            descrption: Primary key of the table
+            tests: 
+              - unique
+              - not_null
+
+      - name: geolocation
+      - name: orders
+      - name: order_items
+      - name: sellers
+      - name: order_payments
