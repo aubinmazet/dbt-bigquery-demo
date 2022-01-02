@@ -13,5 +13,5 @@ select
     sum(case when payment_type = '{{payment_type}}' then payment_value end) as {{payment_type}}_amount,
     {% endfor %}
     sum(payment_value) as total_amount
-from{{ source('ecommerce', 'src_payments') }}
+from{{ ref('src_payments') }}
 group by 1

@@ -4,7 +4,7 @@ with src_orders as (
         cast(o.order_delivered_customer_date as timestamp) as order_delivered_customer_date,
         cast(o.order_estimated_delivery_date as timestamp) as order_estimated_delivery_date,
         cast(o.order_purchase_timestamp as timestamp) as order_purchase_timestamp,
-        o.*,
+        o.customer_id,
         i.*
 
     from 

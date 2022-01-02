@@ -15,4 +15,4 @@ select
     EXTRACT(MONTH FROM o.order_estimated_delivery_date) as order_purchase_month,
     EXTRACT(DAY FROM o.order_estimated_delivery_date) as order_purchase_day,
     EXTRACT(DAYOFWEEK FROM o.order_estimated_delivery_date) as order_purchase_dayofweek,    
-from {{ ref('ecommerce', 'src_orders') }} as o
+from {{ ref('src_orders') }} as o
