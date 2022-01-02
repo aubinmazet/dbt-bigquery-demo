@@ -30,7 +30,7 @@ Sources are defined in .yml files nested under a sources: key.
 ### 3- Add models
 A model is a single .sql file. Each model contains a single select statement that either transforms raw data into a dataset that is ready for analytics, or, more often, is an intermediate step in such a transformation.
 In this example, we are complying to the dbt official style guide (https://github.com/dbt-labs/corp/blob/master/dbt_style_guide.md) with the following structure:
-
+)
 ├── dbt_project.yml
 └── models
     ├── marts
