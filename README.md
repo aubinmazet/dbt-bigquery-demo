@@ -30,28 +30,11 @@ Sources are defined in .yml files nested under a sources: key.
 ### 3- Add models
 A model is a single .sql file. Each model contains a single select statement that either transforms raw data into a dataset that is ready for analytics, or, more often, is an intermediate step in such a transformation.
 In this example, we are complying to the dbt official style guide (https://github.com/dbt-labs/corp/blob/master/dbt_style_guide.md) with the following structure:
-)
-├── dbt_project.yml
-└── models
-    ├── marts
-    |   └── core
-    |       ├── intermediate
-    |       |   ├── intermediate.yml
-    |       |   ├── customers__unioned.sql
-    |       |   ├── customers__grouped.sql
-    |       └── core.yml
-    |       └── core.docs
-    |       └── dim_customers.sql
-    |       └── fct_orders.sql
-    └── staging
-        └── stripe
-            ├── base
-            |   ├── base__stripe_invoices.sql
-            ├── src_stripe.yml
-            ├── src_stripe.docs
-            ├── stg_stripe.yml
-            ├── stg_stripe__customers.sql
-            └── stg_stripe__invoices.sql
+
+<br>
+<img src="docs/code_style.png" width="400" />
+<br>
+<br>
 
 ### 4- Run project and add tests/documentation
 - dbt run
